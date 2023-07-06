@@ -5,7 +5,25 @@ JPEG_IMAGES = []
 JPG_IMAGES = []
 PNG_IMAGES = []
 SVG_IMAGES = []
+
+AVI_VIDEOS = []
+MP4_VIDEOS = []
+MOV_VIDEOS = []
+MKV_VIDEOS = []
+
+DOC_DOCUMENTS = []
+DOCX_DOCUMENTS = []
+TXT_DOCUMENTS = []
+PDF_DOCUMENTS = []
+XLSX_DOCUMENTS = []
+PPTX_DOCUMENTS = []
+
 MP3_AUDIO = []
+OGG_AUDIO = []
+WAV_AUDIO = []
+AMR_AUDIO = []
+
+
 MY_OTHER = []
 ARCHIVES = []
 
@@ -14,8 +32,27 @@ REGISTER_EXTENSION = {
     'JPG': JPG_IMAGES,
     'PNG': PNG_IMAGES,
     'SVG': SVG_IMAGES,
+
+    'AVI': AVI_VIDEOS,
+    'MP4': MP4_VIDEOS,
+    'MOV': MOV_VIDEOS,
+    'MKV': MKV_VIDEOS,
+
+    'DOC': DOC_DOCUMENTS,
+    'DOCX': DOCX_DOCUMENTS,
+    'TXT': TXT_DOCUMENTS,
+    'PDF': PDF_DOCUMENTS,
+    'XLSX': XLSX_DOCUMENTS,
+    'PPTX': PPTX_DOCUMENTS,
+
     'MP3': MP3_AUDIO,
-    'ZIP': ARCHIVES
+    'OGG': OGG_AUDIO,
+    'WAV': WAV_AUDIO,
+    'AMR': AMR_AUDIO,
+
+    'ZIP': ARCHIVES,
+    'GZ': ARCHIVES,
+    'TAR': ARCHIVES
 }
 
 FOLDERS = []
@@ -59,7 +96,25 @@ if __name__ == "__main__":
     print(f'Images jpeg: {JPEG_IMAGES}')
     print(f'Images jpg: {JPG_IMAGES}')
     print(f'Images svg: {SVG_IMAGES}')
+    print(f'Images png: {PNG_IMAGES}')
+
+    print(f'Video avi: {AVI_VIDEOS}')
+    print(f'Video mp4: {MP4_VIDEOS}')
+    print(f'Video mov: {MOV_VIDEOS}')
+    print(f'Video mkv: {MKV_VIDEOS}')
+
+    print(f'Documents doc: {DOC_DOCUMENTS}')
+    print(f'Documents docx: {DOCX_DOCUMENTS}')
+    print(f'Documents txt: {TXT_DOCUMENTS}')
+    print(f'Documents pdf: {PDF_DOCUMENTS}')
+    print(f'Documents xlsx: {XLSX_DOCUMENTS}')
+    print(f'Documents pptx: {PPTX_DOCUMENTS}')
+
     print(f'Audio mp3: {MP3_AUDIO}')
+    print(f'Audio ogg: {OGG_AUDIO}')
+    print(f'Audio wav: {WAV_AUDIO}')
+    print(f'Audio amr: {AMR_AUDIO}')
+    
     print(f'Archives: {ARCHIVES}')
 
     print(f'Types of files in folder: {EXTENSION}')

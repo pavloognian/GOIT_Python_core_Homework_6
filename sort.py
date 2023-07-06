@@ -39,8 +39,39 @@ def main(folder: Path):
         handle_media(file, folder / 'images' / 'PNG')
     for file in parser.SVG_IMAGES:
         handle_media(file, folder / 'images' / 'SVG')
+
+    for file in parser.AVI_VIDEOS:
+        handle_media(file, folder / 'videos' / 'AVI')
+    for file in parser.MP4_VIDEOS:
+        handle_media(file, folder / 'videos' / 'MP4')
+    for file in parser.MOV_VIDEOS:
+        handle_media(file, folder / 'videos' / 'MOV')
+    for file in parser.MKV_VIDEOS:
+        handle_media(file, folder / 'videos' / 'MKV')
+
+    for file in parser.DOC_DOCUMENTS:
+        handle_media(file, folder / 'documents' / 'DOC')
+    for file in parser.DOCX_DOCUMENTS:
+        handle_media(file, folder / 'documents' / 'DOCX')
+    for file in parser.TXT_DOCUMENTS:
+        handle_media(file, folder / 'documents' / 'TXT')
+    for file in parser.PDF_DOCUMENTS:
+        handle_media(file, folder / 'documents' / 'PDF')
+    for file in parser.XLSX_DOCUMENTS:
+        handle_media(file, folder / 'documents' / 'XLSX')
+    for file in parser.PPTX_DOCUMENTS:
+        handle_media(file, folder / 'documents' / 'PPTX')
+
     for file in parser.MP3_AUDIO:
         handle_media(file, folder / 'audio' / 'MP3')
+    for file in parser.OGG_AUDIO:
+        handle_media(file, folder / 'audio' / 'OGG')
+    for file in parser.WAV_AUDIO:
+        handle_media(file, folder / 'audio' / 'WAV')
+    for file in parser.AMR_AUDIO:
+        handle_media(file, folder / 'audio' / 'AMR')
+
+
 
     for file in parser.MY_OTHER:
         handle_media(file, folder / 'MY_OTHER')

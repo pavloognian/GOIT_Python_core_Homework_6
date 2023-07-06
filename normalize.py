@@ -12,7 +12,10 @@ for c, l in zip(CYRILLIC_SYMBOLS, TRANSLATION):
 def normalize(name: str) -> str:
     t_name = name.translate(TRANS)
     t_name = re.sub(r'\W', '_', t_name)
+    #t_name = re.sub(r"_$", ".", t_name)
+    #t_name = t_name.replace("_",".")
+    temp_str = t_name[::-1]
+    t_name = temp_str.replace("_",".",1)
+    t_name = t_name[::-1]
     return t_name
-
-
 
